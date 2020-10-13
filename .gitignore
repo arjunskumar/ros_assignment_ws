@@ -2,3 +2,5 @@ build/
 devel/
 .git/
 .catkin_workspace
+src/CMakeLists.txt
+.vscode

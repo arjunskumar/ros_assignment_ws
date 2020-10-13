@@ -25,9 +25,9 @@ git checkout -b develop
 |  SLNo |  Lesson |   Status|   
 |--- | --- | ---|
 |  1 | Create a Github Account, Understand the basic git commands  | Yes
-| 2|  Create a ros package begineer_tutorials |  - 
+| 2|  Create a ros package beginner_tutorials |  - 
 |  3 |Create a listener node and talker node, talker node publishes some data, listen the data using a listener node and print the listened value to the terminal. (Publish rate is 2 seconds) | - 
-| 4 | Create a launch file (begineer_tutorials.launch) with one listener node and two talker node| - 
+| 4 | Create a launch file (beginner_tutorials.launch) with one listener node and two talker node| - 
 |  5 | Create a custom msg Number.msg) with fields int64 num1, int64 num2  and Sum.msg with following fields int64 total | -
 |  6 | Create a ros node and import Sum and Number msgs, publish to the topic "total" the sum of num1 and num2. Echo the rostopic | - 
 |  7 | Create a custom service (Add_Two_Integers.srv) with request fields int64 a, int64 b  and response field int64 sum | -
