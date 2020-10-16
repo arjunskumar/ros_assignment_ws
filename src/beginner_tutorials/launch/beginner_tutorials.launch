@@ -1,0 +1,9 @@
+<!-- Launching multiple instances of same ROS node -->
+
+<launch>
+  <node  name="talker1" pkg="beginner_tutorials" type="my_talker" output="screen"/>
+  <node  name="listener1" pkg="beginner_tutorials" type="my_listener" output="screen"/>
+  <node ns="second" name="talker2" pkg="beginner_tutorials" type="my_talker" output="screen"/>
+</launch>
+
+
