@@ -38,7 +38,11 @@ git checkout -b develop
 
 | SLNO | Task | Status |
 |--- | --- | ---|
-| 1 | | - |
+| 1 |  Understand ROSbag Commands, Play the rosbag present in package `intermediate_tutorials` | - |
+| 2 | List out all the topics available in the bag file, get the hz, info and type of rostopics| - |
+| 3| Plot the turtle pose using rqt_plot and save the figure as `plot_turtlesim_pose/png` to `intermediate_tutorials/img/` folder | - |
+| 4| | - |
+
 
 ---
 ## Standard naming conventions used in ROS
