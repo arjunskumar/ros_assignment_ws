@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="intermediate_tutorials" name="turtlesim_move" type="turtlesim_move">
+        <param name="rate" value="5"/>
+    </node>
+
+</launch>
