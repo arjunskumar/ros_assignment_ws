@@ -1,5 +1,5 @@
 # ros_assignment_ws
-ROS Internship tasks/assignments at Ignitarium, India
+2 weeks ROS course conducted at Ignitarium, India
 
 [<img src="res/ros_logo.png" width="250"/>](res/ros_logo.png)  
 
@@ -24,14 +24,14 @@ git checkout -b develop
 ## Assignments (Beginner Level)
 |  SLNo |  Task |   Status|   
 |--- | --- | ---|
-|  1 | Create a Github Account, Understand the basic git commands  | Done
-| 2|  Create a ros package beginner_tutorials |  Done 
-|  3 |Create a listener node and talker node, talker node publishes some data, listen the data using a listener node and print the listened value to the terminal. (Publish rate is 2 seconds) | Done 
-| 4 | Create a launch file (beginner_tutorials.launch) with one listener node and two talker node| Done 
-|  5 | Create a custom msg Number.msg) with fields int64 num1, int64 num2  and Sum.msg with following fields int64 total | Done
-|  6 | Create a ros node and import Sum and Number msgs, publish to the topic "total" the sum of num1 and num2. Echo the rostopic | Done 
-|  7 | Create a custom service (Add_Two_Integers.srv) with request fields int64 a, int64 b  and response field int64 sum | Done
-|  8 | Create  a client node and take two numbers from command line arguments, and outputs the response from the server. Create a   server node that takes the request from the client node and  returns the response to client node. Hint use Custom service msg | Done
+|  1 | Create a [Github Account](https://github.com/), Understand the basic git commands  | Done
+| 2|  Create a ros package `beginner_tutorials` |  Done 
+|  3 |Create a `listener node` and `talker node`, talker node publishes some data, listen the data using a listener node and print the listened value to the terminal. (Publish rate is `2 seconds`) | Done 
+| 4 | Create a launch file `beginner_tutorials.launch` with `one listener node` and `two talker node`. Hint use namespace| Done 
+|  5 | Create a [custom msg](http://wiki.ros.org/ROS/Tutorials/DefiningCustomMessages) `Number.msg` with fields int64 num1, int64 num2  and `Sum.msg` with following fields int64 total | Done
+|  6 | Create a `calculate_sum_node` ros node and import Sum and Number msgs, publish to the topic `total` the sum of num1 and num2. Echo the [rostopic](http://wiki.ros.org/rostopic) | Done 
+|  7 | Create a [custom service](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) `Add_Two_Integers.srv` with request fields int64 a, int64 b  and response field int64 sum | Done
+|  8 | Create  a `client node` and take two numbers as command line arguments, and outputs the response from the server. Create a `server node` that takes the request from the client node and  returns the response to client node. Hint use Custom service msg | Done
 
 ---
 ## Assignments (Intermediate Level)
