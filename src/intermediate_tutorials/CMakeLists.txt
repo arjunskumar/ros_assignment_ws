@@ -20,5 +20,5 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(turtlesim_move src/turtlesim_move.cpp)
-target_link_libraries(turtlesim_move ${catkin_LIBRARIES})
+add_executable(turtlesquare_node src/turtle_square.cpp)
+target_link_libraries(turtlesquare_node ${catkin_LIBRARIES})

@@ -1,4 +1,3 @@
-// Arjun S Kumar
 #include "intermediate_tutorials/turtlesim_move.h"
 
 TurtleSimController::TurtleSimController(ros::NodeHandle* nodehandle):nh_(*nodehandle)
@@ -11,18 +10,26 @@ TurtleSimController::TurtleSimController(ros::NodeHandle* nodehandle):nh_(*nodeh
 void TurtleSimController::initializePublishers()
 {
     ROS_INFO("Initializing Publishers");
-    cmd_publisher_ = nh_.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1, true); 
+    cmd_publisher_ = nh_.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1, true);
+    cmd_turn_ =nh_.subscribe<turtlesim::Pose>("/turtle1/pose",100,TurtleSimController::turtlesim_square());//subscribing to /turtle1/pose to access location of turtle 
 }
 
 
-void TurtleSimController::turtlesim_move(){
+void TurtleSimController::turtlesim_square(){
         geometry_msgs::Twist move_cmd;
+	turtlesim::Pose turn_cmd;
+	int d=0,D=100;
+	//turtlesim::pose turn_cmd;
         // Linear speed in x in units/second: positive values imply forward,
         // negative values == backwards
-        move_cmd.linear.x = 0.3; // Modify this value to change the Turtle's speed
-        // Turn at 0 radians/s
-        move_cmd.angular.z = 0.0;
+	while(turn_cmd.x==10){
+	move_cmd.linear.x = 0.3;
+  	}
+	
+        move_cmd.angular.z = 0.75;
+	
         cmd_publisher_.publish(move_cmd);
+	
 }
 
 int main(int argc, char** argv) 
@@ -40,7 +47,7 @@ int main(int argc, char** argv)
     ros::Rate r(rate);
 
     while(ros::ok()){
-        turtlesimController.turtlesim_move();
+        turtlesimController.turtlesim_square();
         ros::spinOnce();
         r.sleep();
     }
