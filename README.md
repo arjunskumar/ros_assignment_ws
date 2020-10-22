@@ -43,7 +43,7 @@ git checkout -b develop
 | 3 | Plot the turtle pose using [rqt_plot](http://wiki.ros.org/rqt_plot) and save the figure as `plot_turtlesim_pose/png` to `intermediate_tutorials/img/` folder | - |
 | 4 | Understand the [turtlesim](http://wiki.ros.org/turtlesim) package | - |
 | 5 | Launch the `move_turtlesim.launch` and do code walk through, play with the code and change rate to 20Hz without editing the node `turtlesim_move`. </br> Hint use [rosparam](http://wiki.ros.org/rosparam) | - |
-|6| Use the node `turtlesim_move` as reference, move the turtle in a square and set the number of square loop as a parameter. Name the node `turtle_square`| - | 
+|6| Use the node `turtlesim_move` as reference, move the turtle in a square and set the number of square loop as a parameter. Name the node `turtlesim_square`| - | 
 | 7 | Why [ROS2.0](https://index.ros.org/doc/ros2/)? ROS1 vs ROS2| - |
 
 ---

@@ -1,6 +1,8 @@
 // Arjun S Kumar
 #include "intermediate_tutorials/turtlesim_square.h"
 
+
+
 TurtleSimController::TurtleSimController(ros::NodeHandle* nodehandle):nh_(*nodehandle)
 {   
     ROS_INFO("Initializing Constructors");
@@ -27,8 +29,7 @@ void TurtleSimController::turtlesim_square(){
     turn_cmd.angular.z = radians(45);
 
     //  Go forward for 2 seconds (10 x 5 HZ) then turn for 2 second
-
-    int count = 0;
+    
     for(int i=0; i < 10; i++){
         // go forward 2.0 m (2 seconds * 1.0 m / seconds), where 2.0 is the side of a square
         cmd_publisher_.publish(move_cmd);
@@ -39,10 +40,7 @@ void TurtleSimController::turtlesim_square(){
         cmd_publisher_.publish(turn_cmd);
         r.sleep();
     }
-
-    count++;
-    if(count ==4)
-        count = 0;
+    
 }
 
 double TurtleSimController::radians(double degree){
@@ -59,15 +57,25 @@ int main(int argc, char** argv)
     
     ros::NodeHandle private_nh("~");
     int rate;  
-
-    private_nh.param<int>("rate", rate, 10);
+    int square_loop;
     
+    private_nh.param<int>("rate", rate, 10);
+    private_nh.param<int>("square_loop", square_loop, 1);
     ros::Rate r(rate);
-
+    int square_count= 0;
+    int side_count = 0;
     while(ros::ok()){
-        turtlesimController.turtlesim_square();
-        ros::spinOnce();
-        r.sleep();
+        while(square_count < square_loop )
+            {
+                turtlesimController.turtlesim_square();
+                side_count++;
+                if(side_count == 4){
+                    square_count++;
+                    side_count = 0;
+                }
+            }
+    ros::spinOnce();
+    r.sleep();
     }
     
     return 0;

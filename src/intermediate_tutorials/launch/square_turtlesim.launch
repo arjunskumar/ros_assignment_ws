@@ -1,0 +1,10 @@
+<launch>
+
+    <node pkg="intermediate_tutorials" name="turtlesim_square" type="turtlesim_square">
+        
+        <param name="rate" value="5"/>
+        <param name="square_loop" value ="2"/>
+
+    </node>
+
+</launch>
