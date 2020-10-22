@@ -22,3 +22,6 @@ include_directories(
 
 add_executable(turtlesim_move src/turtlesim_move.cpp)
 target_link_libraries(turtlesim_move ${catkin_LIBRARIES})
+
+add_executable(turtlesim_square src/turtlesim_square.cpp)
+target_link_libraries(turtlesim_square ${catkin_LIBRARIES})
