@@ -72,3 +72,4 @@ git checkout -b develop
 
 ### Appendix
 [ROS1 Naming Convention](Naming_ROS1.md)
+[ROS1 Best Practices](https://github.com/leggedrobotics/ros_best_practices)
