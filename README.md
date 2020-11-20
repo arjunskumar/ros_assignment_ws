@@ -53,21 +53,22 @@ git checkout -b develop
 
 | SLNO | Task | Status |
 |--- | --- | ---|
-| 1 |  Install [ROS2 Dashing](ROS2_Installation.md) | - |
-| 2 | Create a ROS2 Workspace | - |
-| 3 | Understand ROS2 Commandline commands | - |
-| 4 | Understand ROS2 Topics, ROS2 service, ROS2 parameters | - |
-| 5 | Create a ROS2 C++ Package | - |
-| 6 | Create a ROS2 Python Package | - |
-| 7 | Create a ROS2 launch file  | - |
-| 8 | Create a ROS2 custom message | - |
-| 9| Create a ROS2 C++ Package | - |
-| 10 | Communicate between ROS1 and ROS2 | - |
-| 11 | Create a simple ROS2 C++ publisher & Subscriber | - |
-| 12 | Create a simple ROS2 Python publisher & Subscriber | - |
-| 13 | Create a simple ROS2 C++ Service & Client | - |
-| 14 | Create a simple ROS2 Python Service & Client | - |
-| 15 | Understand ROS2bag, Rqt tools | - |
+| 1 |  Install [ROS2 Dashing](ROS2_Installation.md) | Done |
+| 2 | Create a ROS2 Workspace | Done |
+| 3 | Understand ROS2 Commandline commands | Done |
+| 4 | Understand ROS2 Topics, ROS2 service, ROS2 parameters | Done |
+| 5 | Create a ROS2 C++ Package | Done |
+| 6 | Create a ROS2 Python Package | Done |
+| 7 | Create a ROS2 launch file  | Done |
+| 8 | Create a ROS2 custom message | Done |
+| 9| Create a ROS2 C++ Package | Done |
+| 10 | Communicate between ROS1 and ROS2 | Done |
+| 11 | Create a simple ROS2 C++ publisher & Subscriber | Done |
+| 12 | Create a simple ROS2 Python publisher & Subscriber | Done |
+| 13 | Create a simple ROS2 C++ Service & Client | Done |
+| 14 | Create a simple ROS2 Python Service & Client | Done |
+| 15 | Understand ROS2bag, Rqt tools | Done |
+
 ---
 
 ### Appendix
